@@ -8,7 +8,6 @@ const app = new Elysia()
     provider: "swagger-ui", 
     path: "/docs" 
   }))
-  .get("/", () => "Hello Elysia dev")
   .use(UserRoute)
   .listen(3000);
 
